@@ -10,7 +10,7 @@ text {
     flex-direction: column;
     justify-content: space-between;
 }
-.info-one{
+    .info-one{
     display: flex;
     justify-content: space-between;
 }

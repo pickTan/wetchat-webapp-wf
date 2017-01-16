@@ -126,3 +126,12 @@ swiper {
     background-color: #35B6DD;
     color: #FFF;
 }
+
+.pro-all-info {
+    padding:20rpx 40rpx; 
+    font-size: 12pt;
+    color: #666;
+    line-height: 14pt;
+    border-bottom: 1rpx solid #cccccc; 
+    background-color: #FFF;
+    }

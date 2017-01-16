@@ -1,6 +1,6 @@
 <view class="container">
     <view class="pro-head">
-        <text class="pro-title">阿斯顿回家打算离开好阿斯利康好</text>
+        <text class="pro-title">{{title}}</text>
         <view class="pro-price flex">
             <view >
                <text class="pro-real-t">体验价</text>
@@ -8,7 +8,7 @@
                <text class="pro-real-m">{{onePrice}}</text>
             </view>
             <view style="margin-left:40rpx;text-decoration:line-through;"> 
-                <text class="pro-old-t">市场价¥540</text>
+                <text class="pro-old-t">市场价¥{{truePrice}}</text>
             </view>
         </view>
     </view>
@@ -29,9 +29,9 @@
         <view class="pro-section">
             <text class="sect-title">数量:</text>
             <view class="spe-lst">
-                <button class="add-btn spec-btn" bindtap="add">+</button>
+                <button class="add-btn spec-btn" bindtap="cut">-</button>
                 <input  class="num-ipnut" type="number" value="{{num}}" bindinput="inputVl"  />
-                <button class="cut-btn spec-btn" bindtap="cut">-</button>
+                <button class="cut-btn spec-btn" bindtap="add">+</button>
             </view>
         </view >
         <view class="pro-section" style="border-bottom: 1rpx #cccccc solid;">
@@ -41,7 +41,7 @@
         <view class="pro-all-info">
             <text>{{info}}</text>
         </view>
-        <image src="{{infoImg}}" style="width:100%;" mode="widthFix"></image>
+        <image wx:for="{{infoImgs}}" src="{{item.url}}" style="width:100%;" mode="widthFix"></image>
         <view style="height:128rpx;width:100%;">
         </view>
 </view>
