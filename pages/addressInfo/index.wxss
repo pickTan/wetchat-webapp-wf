@@ -1,0 +1,30 @@
+.form-item{
+    display: flex;
+    align-items: center;
+    height: 60rpx;
+    border-bottom: 1rpx solid #eeeeee;
+    padding: 20rpx 40rpx;
+    background-color: white;
+    font-size: 12pt;
+    line-height: 15pt;
+}
+.title{
+    display: inline-block;
+    width: 160rpx;
+}
+picker{
+    margin-right: 15rpx;
+    color: palevioletred;
+}
+.color-red{
+    color: palevioletred;
+}
+/*.click::after{
+    content: '>';
+    position: absolute;
+    right: 40rpx;
+}*/
+
+.where{
+    display: flex;
+}

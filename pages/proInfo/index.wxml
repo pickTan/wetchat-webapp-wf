@@ -46,5 +46,5 @@
         </view>
 </view>
  <view class="fix-btns">
-    <button class="buy-btn" bindtap="">立即购买</button>
+    <button class="buy-btn" bindtap="goOrder">立即购买</button>
 </view>

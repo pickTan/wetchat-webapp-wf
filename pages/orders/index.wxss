@@ -1,0 +1,109 @@
+.address-choice{
+    display: flex;
+    flex-direction: column;
+    padding: 40rpx 80rpx 20rpx 40rpx; 
+    position: relative;
+    background-color: #FFF;
+    border-top: 1rpx solid #dddddd;
+    border-bottom: 1rpx solid #dddddd;
+}
+.address-choice::after{
+    content: '>';
+    position: absolute;
+    display: inline-block;
+    right: 30rpx;
+    top:60rpx;
+    width: 40rpx;
+    height: 40rpx;
+    background: url() no-repeat transparent 0/100%;
+}
+.adress-one{
+    display: flex;
+    font-size:13pt; 
+}
+.telNo{
+    margin-left: 100rpx;
+}
+.adress-two{
+    padding: 20rpx 0;
+    font-size:11pt;
+    line-height: 12pt; 
+}
+.order{
+display: flex;
+justify-content: space-between;
+padding: 40rpx 20rpx;
+background-color: #fff;
+margin-top: 20rpx;
+border-top: 1rpx solid #dddddd;
+border-bottom: 1rpx solid #dddddd;
+font-size:12pt;
+
+}
+.order-image{
+    width: 200rpx;
+    margin-right: 20rpx;
+}
+
+.order-info{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.title{
+    display: -webkit-box;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:1;
+}
+.info-no{
+    font-size: 10pt;
+}
+.number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tem{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 20rpx 40rpx;
+    font-size:13pt;
+    border-bottom: 1rpx solid #dddddd;
+}
+.buy-info{
+ background-color: #FFF;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ text-align: center;
+ height:250rpx;
+ margin-top: 20rpx;
+ border-top: 1rpx solid #dddddd;
+ border-bottom: 1rpx solid #dddddd;
+
+}
+.buy-one-one{
+    font-size:11pt;
+}
+.buy-one-two{
+    font-size:9pt;
+}
+.buy-one-three{
+    font-size:14pt;
+    color: #ff7700;
+}
+.postage{
+     font-size:12pt;
+}
+.buy-btn{
+    background-color:#09bb07;
+    color:#FFF;
+    width:96%;
+    font-size:14pt;
+    margin-bottom: 20rpx;
+}

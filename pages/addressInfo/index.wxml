@@ -1,0 +1,26 @@
+<view class="container" >
+    <view class="form-item" wx:for="{{addressinfo}}" >
+        <text class="title">{{item.title}}</text>
+        <input wx:if="{{!item.click}}" class="input"  type="{{item.type}}" maxlength="{{item.lenght?item.lenght:20}}"   value="" />
+        <view wx:else class="where click">
+            <picker bindchange="changePro" value="{{indexPro}}" class="{{!pro?'color-red':''}}" range="{{arrayPro}}">
+                <view class="picker">
+                    {{array[indexPro]}}
+                {{pro? pro :'选择省'}}
+                </view>
+            </picker>
+            <picker wx:if="{{pro && arrayCity[0]}}" class="{{!city?'color-red':''}}" bindchange="changeCity" value="{{indexCity}}" range="{{arrayCity}}">
+                <view class="picker">
+                    {{city ?city :'选择市'}}
+                </view>
+            </picker>
+            <picker wx:if="{{city && arrayQu[0]}}" class="{{!qu?'color-red':''}}" bindchange="changeQu" value="{{indexQu}}" range="{{arrayQu}}">
+                <view class="picker">
+                    {{qu ?qu :'选择区'}}
+                </view>
+            </picker>
+        </view>
+    </view>
+    <button style="width:95%;background-color:#FFF;border:1rpx solid red;color:red;margin-top:40rpx;">保存并使用</button>
+</view>
+

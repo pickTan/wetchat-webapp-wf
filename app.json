@@ -1,8 +1,10 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/addressInfo/index",
     "pages/proInfo/index",
     "pages/address/index",
+  
     "pages/orders/index",
     "pages/my/index"
   ],

@@ -1,48 +1,32 @@
+import {rootUrl,rootUrl2} from '../../utils/params';
+import {proLst} from '../../utils/public';
 Page( {
   data: {
-    userInfo: {},
-    // projectSource: 'https://github.com/liuxuanqiang/wechat-weapp-mall',
-    userListInfo: [ {
-      icon: '../../images/iconfont-dingdan.png',
-      text: '我的订单',
-      isunread: true,
-      unreadNum: 2
-    }, 
-    // {
-    //     icon: '../../images/iconfont-card.png',
-    //     text: '我的代金券',
-    //     isunread: false,
-    //     unreadNum: 2
-    //   }, 
-      // {
-      //   icon: '../../images/iconfont-icontuan.png',
-      //   text: '我的拼团',
-      //   isunread: true,
-      //   unreadNum: 1
-      // }, 
-      {
-        icon: '../../images/iconfont-shouhuodizhi.png',
-        text: '收货地址管理'
-      }, 
-      // {
-      //   icon: '../../images/iconfont-kefu.png',
-      //   text: '联系客服'
-      // }, 
-      // {
-      //   icon: '../../images/iconfont-help.png',
-      //   text: '常见问题'
-      // }
-      ]
+        imgUrls: [1],
+        truePrice:'',
+        title:'',
+        info:'',
+        onePrice: '',
+        morePrice:'',
+        specLst:[1], //规格参数
+        id:'',
+        attr:'',
+        num:1,
+        infoImgs:[1],
+        address:{
+            name:'',
+            telNo:'',
+            info:''
+        }
   },
-
-  onLoad: function() {
-    var that = this
-    //调用应用实例的方法获取全局数据
-    app.getUserInfo( function( userInfo ) {
-      //更新数据
-      that.setData( {
-        userInfo: userInfo
-      })
-    })
+  onLoad(options){
+      wx.setNavigationBarTitle({title: '填写订单'}); //标题
+      this.setData({  id:options.id,    //获取参数并赋值
+                      num:options.num,
+                      attr:options.attr,
+                      onePrice: options.onePrice,
+                      morePrice:options.morePrice,
+                      });
+      this.setData(proLst(options.id));     
   }
 })

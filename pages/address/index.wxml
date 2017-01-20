@@ -1,2 +1,15 @@
-<!--pages/address/index.wxml-->
-<text>pages/address/index.wxml</text>
+<view class="container" >
+    <view class="address-choice" wx:for="{{addressLst}}" >
+        <view class="center choice" wx:if="{{item.choice}}" ></view>
+        <view class="address-info">
+            <view class="adress-one">
+                <text class="name">{{item.name}}</text>
+                <text class="telNo">{{item.telNo}}</text>
+            </view>
+            <text class="adress-two">{{item.info}}</text>
+        </view>
+        <navigator class="center write" url="{{addressInfoUrl}}?name={{item.name}}&telNo={{item.telNo}}">
+        </navigator>    
+    </view>
+      <button style="width:95%;background-color:#FFF;" bindtap="goInfo">新建地址</button>
+</view>

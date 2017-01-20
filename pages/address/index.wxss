@@ -1,1 +1,41 @@
-/* pages/address/index.wxss */
+.address-choice{
+    display: flex;
+    padding: 40rpx 40rpx 20rpx 40rpx; 
+    position: relative;
+    background-color: #FFF;
+    border-top: 1rpx solid #dddddd;
+    border-bottom: 1rpx solid #dddddd;
+    margin-bottom: 20rpx;
+}
+address-info {
+    display: flex;
+    flex-direction: column;
+}
+.adress-one{
+    display: flex;
+    justify-content: space-between;
+    font-size:13pt;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.choice{
+    display: inline-block;
+    width: 60rpx;
+    background: url('../../images/choice-icon.png') center/80% transparent no-repeat;
+}
+
+.write{
+    display: inline-block;
+    width: 100rpx;
+    background: url('../../images/write-icon.png') center/60% transparent no-repeat; 
+}
+
+.adress-two{
+    padding: 20rpx 0;
+    font-size:11pt;
+    line-height: 12pt;
+}
